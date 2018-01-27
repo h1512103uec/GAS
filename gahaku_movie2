@@ -1,0 +1,6 @@
+function reset() {
+  var sheet = SpreadsheetApp.getActiveSheet();//現在アクティブになっているシートを選択
+  sheet.getRange('C2:C1000').setValue();/* sheet変数の中のC2からC1000セルを　削除 
+  .clearメソッドではなく.setValueを使うことで条件付き書式を消すことなくセル内容を
+  初期化することが出来る*/
+}
